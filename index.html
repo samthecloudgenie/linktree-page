@@ -4,79 +4,82 @@
   <meta charset="UTF-8">
   <title>Samuel Onah – Links</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #f4f4f4;
-      color: #222;
-      text-align: center;
-      margin: 0;
-      padding: 2rem;
-    }
-    .container {
-      max-width: 500px;
-      margin: auto;
-    }
-    img.profile-pic {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 1rem;
-    }
-    h1 {
-      font-size: 1.8rem;
-      margin: 0.5rem 0;
-    }
-    p.bio {
-      color: #555;
-      margin-bottom: 2rem;
-    }
-    a.link-btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 1rem auto;
-      padding: 1rem;
-      width: 90%;
-      max-width: 400px;
-      background-color: #222;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 10px;
-      transition: background 0.3s ease;
-    }
-    a.link-btn:hover {
-      background-color: #444;
-    }
-    .link-btn span {
-      margin-left: 10px;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2d9b5c56f.js" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
 </head>
 <body>
-
   <div class="container">
-    <!-- Optional profile image -->
-    <!-- <img class="profile-pic" src="https://your-image-url.jpg" alt="Profile Picture"> -->
+    <div class="profile-section">
+      <img class="profile-pic" src="./assets/images/1000041704.pdf" alt="Samuel Onah">
+      <h1>Samuel Onah</h1>
+      <p class="bio">Cloud & DevOps Engineer | Linux Enthusiast | Technical Writer</p>
+    </div>
 
-    <h1>Samuel Onah</h1>
-    <p class="bio">Cloud & DevOps | Linux Enthusiast | Technical Writer</p>
+    <div class="stats-bar">
+      <div class="stat">
+        <div class="stat-number">10+</div>
+        <div class="stat-label">Articles</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">3k+</div>
+        <div class="stat-label">Followers</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">10+</div>
+        <div class="stat-label">Projects</div>
+      </div>
+    </div>
 
-    <a class="link-btn" href="https://www.linkedin.com/in/samuel-onah-32a329280/" target="_blank">
-      🔗 <span>LinkedIn</span>
-    </a>
-    <a class="link-btn" href="https://github.com/samthecloudgenie" target="_blank">
-      💻 <span>GitHub</span>
-    </a>
-    <a class="link-btn" href="https://medium.com/@samuelonah70" target="_blank">
-      ✍️ <span>Medium Blog</span>
-    </a>
-     <a class="link-btn" href="https://dev.to/samuel_onah" target="_blank">
-      💻 <span>Dev.to Blog</span>
-     </a>
+    <div class="links-container">
+      <a class="link-btn" href="https://www.linkedin.com/in/samuel-onah-32a329280/" target="_blank">
+        <div class="link-content">
+          <i class="fab fa-linkedin"></i>
+          <span class="link-text">LinkedIn Profile</span>
+        </div>
+        <div class="link-arrow">→</div>
+      </a>
+      
+      <a class="link-btn" href="https://github.com/samthecloudgenie" target="_blank">
+        <div class="link-content">
+          <i class="fab fa-github"></i>
+          <span class="link-text">GitHub Repository</span>
+        </div>
+        <div class="link-arrow">→</div>
+      </a>
+      
+      <a class="link-btn" href="https://medium.com/@samuelonah70" target="_blank">
+        <div class="link-content">
+          <i class="fab fa-medium"></i>
+          <span class="link-text">Medium Articles</span>
+        </div>
+        <div class="link-arrow">→</div>
+      </a>
+      
+      <a class="link-btn" href="https://dev.to/samuel_onah" target="_blank">
+        <div class="link-content">
+          <i class="fab fa-dev"></i>
+          <span class="link-text">Dev.to Blog</span>
+        </div>
+        <div class="link-arrow">→</div>
+      </a>
+      
+      <a class="link-btn" href="./assets/SAMUEL_ONAH_CV.pdf" target="_blank">
+        <div class="link-content">
+          <i class="fas fa-file-alt"></i>
+          <span class="link-text">Download Resume</span>
+        </div>
+        <div class="link-arrow">→</div>
+      </a>
+    </div>
+
+    <div class="toggle-container">
+      <div class="toggle-btn" onclick="toggleDarkMode()">
+        <span class="toggle-icon">🌙</span>
+        <span class="toggle-text">Dark Mode</span>
+      </div>
+    </div>
   </div>
-
 </body>
 </html>
